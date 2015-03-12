@@ -23,14 +23,14 @@ function List(){
 	this.iterate = function() {
 		var current = this.start;
 		while (current !== null) {
-			//do something which the current node
+			//do something with the current node
 			console.log(current.data)	
 			current = current.next; 
 		}	
 	}
 
 	this.insertFirst = function(data) {
-		// var newItem = List.makeNode();
+		// var newItem = List.makeNode()... or
 		var newItem = {data: data, next: this.start}
 		this.start = newItem;
 	}
